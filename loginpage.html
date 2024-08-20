@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #7B2CBF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .login-container {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-container .login-form {
+            padding: 88px;
+            width: 65%;
+        }
+        
+        .login-form h2 {
+            margin-bottom: 30px;
+        }
+        
+        .login-container .login-info {
+            background-image: url(https://media.istockphoto.com/id/666638144/photo/man-photographer-is-making-landscape-photography-with-old-film-camera-in-spring-or-summer.jpg?s=2048x2048&w=is&k=20&c=ysM2tSnEvF5NbaSNlch9VzRTAtOF_CEV2cknRKDRYog=);
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            color: white;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 80px;
+        }
+        
+        .form-group {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            color: #7B2CBF;
+        }
+        
+        .login-info:hover {
+            opacity: 1.0;
+        }
+        
+        .login-info h2 {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+        
+        .login-info p {
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .form-control {
+            margin-bottom: 20px;
+            border: none;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        
+        .btn-primary {
+            background-color: #7B2CBF;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #5A189A;
+        }
+        
+        .forgot-password,
+        .signup {
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .forgot-password {
+            color: #7B2CBF;
+            margin-bottom: 5px;
+            padding: 2px;
+        }
+        
+        .signup a {
+            color: #7B2CBF;
+            text-decoration: none;
+        }
+        
+        .signup a:hover {
+            text-decoration: underline;
+        }
+        
+        .signup span {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <!-- <label for="email">Email address</label> -->
+                    <i class="ri-mail-fill"></i> <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <hr style="border: 1px solid black;">
+                <div class="form-group">
+                    <!-- <label for="password">Password</label> -->
+                    <i class="ri-lock-fill"></i><input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <hr style="border: 1px solid black">
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="signup">
+                    <span>Don't have an account? <a href="#">Signup now</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="login-info">
+            <h2>Every new friend is a new adventure.</h2>
+            <p>Let's get connected</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
